@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link href="//vjs.zencdn.net/7.10.2/video-js.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="//vjs.zencdn.net/7.10.2/video.min.js"></script>
+</head>
+
+<body>
+    <video autoplay loop plays-inline  class="back-video" id="video_inicio">
+        <source src="./video/video.mp4" type="video/mp4">
+    </video>
+    <button class="btn-silenciar" id="btn-silenciar"><i class="bi bi-volume-mute-fill"></i></button>
+
+    <header class="header" id="inicio">
+        <img class="hamburguer" src="img/hamburguesa.svg" alt="">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#fotodeldia">Foto Diaria</a>
+            <a href="#servicio">To The Moon</a>
+            
+            <a href="#footer">Contacto</a>
+        </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Un vistazo al Universo</h1>
+            <p class="copy">Existen dos posibilidades: que estemos solos en el universo o que no lo estemos. Ambas son
+                igualmente aterradoras.<br><br>
+                -Arthur C.Clarke</p>
+        </div>
+
+    </header>
+    <main>
+        <div class="container" id="fotodeldia">
+            <h3 class="pt-2 text-center">Foto Diaria (sistema APOD)</h3>
+            <h4 id="titulo_apod" class="pt-2 text-center"></h4>
+            <p id="fecha_apod" class="text-center"></p>
+            <p id="dsc_apod" class="lead pt-5"></p>
+            <div id="c_multimedia" class="text-center embed-responsive embed-responsive-21by9"></div>
+        </div>
+        <section class="services contenedor" id="servicio">
+            <h2 class="subtitulo">Humanidad y Espacio</h2>
+            <div class="contenedor-servicio">
+                <img src="img/checklist.svg" alt="">
+                <div class="checklist-servicio">
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">1</span>Atencion al Cliente</h3>
+                        <p> Atención 24hrs Lunes-Viernes mediante WhatsApp</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">2</span>Disponibilidad y Compromiso</h3>
+                        <p> Tenemos a disposicion 3 departamentos distribuidos por Rosario,Argentina</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">3</span>Entrega de Llaves</h3>
+                        <p> Dejamos a discrecion el inmueble para ser utilizado en el horario que el cliente elija</p>
+                    </div>
+                    <div class="service">
+                        <h3 class="n-service"><span class="number">4</span>Amamos las mascotas!</h3>
+                        <p> Crear una base en la lunar para permitir viajes espaciales</p>
+                    </div>
+                </div>
+
+            </div>
+            <section class="contenedor-video">
+                <video-js class="fm-video video-js vjs-big-play-centered vjs-4-3" id="fm-video">
+                    <source src="./video/video2.mp4" type="video/mp4">
+                </video-js>
+            </section>
+
+        </section>
+        <section class="gallery" id="galeria">
+            <div class="contenedor">
+                <h2 class="subtitulo">Departamentos</h2>
+                <div class="contenedor-galeria">
+                </div>
+            </div>
+        </section>
+        <div class="imagen-light">
+            <img src="img/close.svg" alt="" class="close">
+            <img src="" alt="" class="agregar-imagen">
+        </div>
+        
+    </main>
+
+    <footer id="footer">
+        <div class="contenedor footer-content">
+
+            <div class="social-media">
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+    <script src="js/video.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/deptos.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/nasa.js"></script>
+
+
+
+</body>
+
+</html>
