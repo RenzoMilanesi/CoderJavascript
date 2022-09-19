@@ -7,9 +7,9 @@ function obtenerDatos() {
   fetch(ApodKey)
     .then(respuesta => respuesta.json())
     .then(resultado => mostrarDatos(resultado))
-    
-}
 
+}
+/*Mostrar datos de la api , muestra una foto y descripcion distinta cada dia , quise hacer que se pueda elegir el dia y que te muestre la foto de ese dia , pero al trabajar con fechas se me hizo muy dificil y lo deje estandar*/
 function mostrarDatos({
   date,
   explanation,

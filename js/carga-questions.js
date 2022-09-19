@@ -1,5 +1,5 @@
 const questionsContainer=document.querySelector('.questions__container')
-
+/*Carga dinamica de las preguntas , sacadas de questions-db.js */
 preguntas.forEach((pregunta)=>{
     const article=document.createElement('article')
     article.className="questions__padding";

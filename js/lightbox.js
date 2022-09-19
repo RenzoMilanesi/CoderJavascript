@@ -3,9 +3,7 @@ const imagenLight = document.querySelector('.agregar-imagen');
 const contenedorLight = document.querySelector('.imagen-light')
 const closeLight = document.querySelector('.close')
 
-
-
-
+/*efecto modal tipo zoom al clickear las imagenes de los planetas*/
 imagenes.forEach(imagen => {
     imagen.addEventListener('click',()=>{
         aparecerImagen(imagen.getAttribute('src'));

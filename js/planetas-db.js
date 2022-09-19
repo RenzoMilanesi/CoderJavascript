@@ -39,7 +39,7 @@ let planetas = [{
         desc: "Urano es el séptimo planeta del sistema solar, el tercero de mayor tamaño, y el cuarto más masivo. Se llama así en honor de la divinidad griega del cielo Urano, el padre de Crono y el abuelo de Zeus.",
         dist: "588 millones de kilómetros",
         img: 'img/urano.jpg'
-    },{
+    }, {
         id: 7,
         nombre: "Neptuno",
         desc: "Neptuno es el octavo planeta en distancia respecto al Sol y el más lejano del sistema solar. Forma parte de los denominados planetas exteriores, y dentro de estos, es uno de los gigantes helados, y es el primero que fue descubierto gracias a predicciones matemáticas.",
