@@ -12,10 +12,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script src="//vjs.zencdn.net/7.10.2/video.min.js"></script>
+
+    
 </head>
 
 <body>
-    <video autoplay loop plays-inline  class="back-video" id="video_inicio">
+    <video autoplay loop   class="back-video" id="video_inicio">
         <source src="./video/video.mp4" type="video/mp4">
     </video>
     <button class="btn-silenciar" id="btn-silenciar"><i class="bi bi-volume-mute-fill"></i></button>
@@ -27,6 +29,7 @@
             <a href="#fotodeldia">Foto Diaria</a>
             <a href="#servicio">To The Moon</a>
             <a href="#galeria">Planetas a Colonizar</a>
+            <a href="#preguntas">Preguntas Frecuentes</a>
             <a href="#footer">Contacto</a>
         </nav>
         <div class="contenedor head">
@@ -70,6 +73,7 @@
 
             </div>
             <section class="contenedor-video">
+                <h4 class="mb-3">Aprende mas sobre Proyecto Artemis</h4>
                 <video-js class="fm-video video-js vjs-big-play-centered vjs-4-3" id="fm-video">
                     <source src="./video/video2.mp4" type="video/mp4">
                 </video-js>
@@ -88,6 +92,60 @@
             <img src="" alt="" class="agregar-imagen">
         </div>
         
+        <section class="questions container"  id="preguntas">
+            <h2 class="subtitle mt-2">Preguntas frecuentes</h2>
+            <p class="questions__paragraph">Aunque es imposible ser certeros, aca una lista de preguntas frecuentes.</p>
+
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Por qué la Luna nos muestra siempre la misma cara?
+                            <span class="questions__arrow">
+                                <i class="bi bi-arrow-down-circle questions__img" ></i>
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">Vivas donde vivas y la mires cuando la mires, la Luna siempre nos muestra la misma cara.
+
+                            Esto se debe a un fenómeno conocido como rotación sincrónica. Esto significa que la Luna rota sobre sí misma y sobre la Tierra a la misma velocidad.
+                            
+                            Concretamente, la Luna tarda en completar una vuelta sobre sí misma y alrededor de la Tierra unos 27,32 días aproximadamente.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué es un año luz?
+                            <span class="questions__arrow">
+                                <i class="bi bi-arrow-down-circle questions__img" ></i> 
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">El año luz es una unidad de medida de distancia muy utilizada en astronomía. Corresponde a la distancia que recorre la luz durante un año.
+
+                            Puesto que la velocidad de la luz es constante en el vacío, el año luz es una unidad de medida muy fiable a la hora de hablar de largas distancias.
+                            
+                            Metro arriba metro abajo, un año luz son 9.460.730.472.580,8 km.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Cuál es la velocidad de la luz?
+                            <span class="questions__arrow">
+                                <i class="bi bi-arrow-down-circle questions__img" ></i>
+                            </span>
+                        </h3>
+
+                        <p class="questions__show">La luz viaja en el vacío a 299.792.458 m/s; aunque generalmente suele aproximarse y decir que viaja a 300.000 km/s aproximadamente.
+
+                            Tal y como dicen las ecuaciones de la Relatividad de Einsten, esta velocidad es constante. Eso significa que la midas como la midas, la luz siempre viaja a la misma velocidad.</p>
+                    </div>
+                </article>
+            </section>
+
+            
+        </section>
     </main>
 
     <footer id="footer">
@@ -113,6 +171,7 @@
     <script src="js/carga-planetas.js"></script>
     <script src="js/lightbox.js"></script>
     <script src="js/nasa.js"></script>
+    <script src="js/questions.js"></script>
 
 
 
